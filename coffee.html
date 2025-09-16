@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roasted Bliss - Artisan Coffee Shop</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav">
+            <div class="nav__container">
+                <a href="#home" class="nav__logo">
+                    <span class="logo__text">Roasted Bliss</span>
+                </a>
+                
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#menu" class="nav__link">Menu</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">About</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">Contact</a>
+                        </li>
+                    </ul>
+                    
+                    <div class="nav__close" id="nav-close">
+                        <span class="close__icon">&times;</span>
+                    </div>
+                </div>
+                
+                <div class="nav__toggle" id="nav-toggle">
+                    <span class="toggle__bar"></span>
+                    <span class="toggle__bar"></span>
+                    <span class="toggle__bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero__container">
+                <div class="hero__content">
+                    <h1 class="hero__title">
+                        Discover the Perfect
+                        <span class="hero__title--accent">Coffee Experience</span>
+                    </h1>
+                    <p class="hero__description">
+                        Handcrafted with passion, served with love. Experience the finest artisan coffee 
+                        made from premium beans sourced directly from sustainable farms around the world.
+                    </p>
+                    <div class="hero__buttons">
+                        <a href="#menu" class="btn btn--primary">Explore Menu</a>
+                        <a href="#about" class="btn btn--secondary">Our Story</a>
+                    </div>
+                </div>
+                <div class="hero__image">
+                    <img src="https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Premium coffee being poured" class="hero__img">
+                </div>
+            </div>
+        </section>
+
+        <!-- Menu Section -->
+        <section class="menu section" id="menu">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Our Menu</h2>
+                    <p class="section__subtitle">Crafted with precision, served with passion</p>
+                </div>
+                
+                <div class="menu__tabs">
+                    <button class="menu__tab active" data-tab="coffee">Coffee</button>
+                    <button class="menu__tab" data-tab="pastries">Pastries</button>
+                    <button class="menu__tab" data-tab="specials">Specials</button>
+                </div>
+                
+                <div class="menu__content">
+                    <!-- Coffee Menu -->
+                    <div class="menu__category active" id="coffee">
+                        <div class="menu__grid">
+                            <div class="menu__item">
+                                <div class="menu__item-header">
+                                    <h3 class="menu__item-name">Espresso Perfetto</h3>
+                                    <img src="./Images/img1.jpeg" class="cardImg"/>
+                                    <span class="menu__item-price">$3.50</span>
+                                </div>
+                                <p class="menu__item-description">
+                                    Rich, intense shot of our signature blend with perfect crema
+                                </p>
+                            </div>
+                            
+                            <div class="menu__item">
+                                <div class="menu__item-header">
+                                    <h3 class="menu__item-name">Cappuccino Classico</h3>
+                                    <img src="./Images/img2.jpg" class="cardImg" alt="Cappuccino in a black cup with intricate latte art on top, sitting on a matching black saucer placed on a glossy dark tray in a cozy cafe setting, creating a warm and inviting atmosphere"/>
+                                    <span class="menu__item-price">$4.75</span>
+                                </div>
+                                <p class="menu__item-description">
+                                    Traditional espresso with steamed milk and artful foam
+                                </p>
+                            </div>
+                            
+                            <div class="menu__item">
+                                <div class="menu__item-header">
+                                    <h3 class="menu__item-name">Flat White</h3>
+                                    <img src="./Images/img3.jpg" class="cardImg" alt="Cup of flat white coffee with intricate latte art on top, sitting on a white saucer with a spoon on a marble table in a cozy cafe setting"/>
+                                    <span class="menu__item-price">$4.50</span>
+                                </div>
+                                <p class="menu__item-description">
+                                    Double shot with microfoam milk, perfectly balanced
+                                </p>
+                            </div>
+                            
+                            <div class="menu__item">
+                                <div class="menu__item-header">
+                                    <h3 class="menu__item-name">Cold Brew Reserve</h3>
+                                    <img src="./Images/img4.jpg" class="cardImg" alt="Cold brew coffee being poured from a metal jug into a glass filled with ice, surrounded by scattered coffee beans on a rustic wooden surface in a cozy, warmly lit cafe setting, evoking a sense of comfort and relaxation"/>
+                                    <span class="menu__item-price">$5.25</span>
+                                </div>
+                                <p class="menu__item-description">
+                                    20-hour cold extraction, smooth and naturally sweet
+                                </p>
+                            </div>
+                            
+                            <div class="menu__item">
+                                <div class="menu__item-header">
+                                    <h3 class="menu__item-name">Mocha Deluxe</h3>
+                                    <img src="./Images/img5.jpg" class="cardImg" alt="Mocha coffee in a clear glass topped with creamy foam and latte art, resting on a white saucer with a metal spoon on a sunlit wooden table in a warm and inviting cafe atmosphere"/>
+                                    <span class="menu__item-price">$5.50</span>
+                                </div>
+                                <p class="menu__item-description">
+                                    Espresso with premium Belgian chocolate and steamed milk
+                                </p>
+                            </div>
+                            
+                            <div class="menu__item">
+                                <div class="menu__item-header">
+                                    <h3 class="menu__item-name">Caramel Macchiato</h3>
+                                    <img src="./Images/img6.jpg" class="cardImg" alt="Caramel macchiato served in a clear glass mug topped with swirled whipped cream and caramel drizzle, sitting on a white saucer with a metal spoon on a wooden table. Several caramel candies are stacked nearby. The setting is warm and inviting, evoking a cozy and indulgent atmosphere in a cafe.">
+                                    <span class="menu__item-price">$5.75</span>
+                                </div>
+                                <p class="menu__item-description">
+                                    Vanilla-flavored steamed milk with espresso and caramel drizzle
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Pastries Menu -->
+                    <div class="menu__category" id="pastries">
+                        <div class="menu__grid">
+                            <div class="menu__item">
+                                <div class="menu__item-header">
+                                    <h3 class="menu__item-name">Artisan Croissant</h3>
+                                    <img src="./Images/pasteryIMG1.jpg" class="cardImg" alt="Artisan Croissant Image"/>
+                                    <span class="menu__item-price">$3.25</span>
+                                </div>
+                                <p class="menu__item-description">
+                                    Buttery, flaky French pastry baked fresh daily
+                                </p>
+                            </div>
+                            
+                            <div class="menu__item">
+                                <div class="menu__item-header">
+                                    <h3 class="menu__item-name">Chocolate Danish</h3>
+                                    <img src="./Images/pasteryIMG2.jpg" class="cardImg" alt="Chocolate Danish Image"/>
+                                    <span class="menu__item-price">$4.50</span>
+                                </div>
+                                <p class="menu__item-description">
+                                    Rich pastry filled with premium dark chocolate
+                                </p>
+                            </div>
+                            
+                            <div class="menu__item">
+                                <div class="menu__item-header">
+                                    <h3 class="menu__item-name">Blueberry Muffin</h3>
+                                    <img src="./Images/pasteryIMG3.jpg" class="cardImg" alt="Blueberry Muffin Image"/>
+                                    <span class="menu__item-price">$3.75</span>
+                                </div>
+                                <p class="menu__item-description">
+                                    Fresh blueberries in a tender, moist muffin
+                                </p>
+                            </div>
+                            
+                            <div class="menu__item">
+                                <div class="menu__item-header">
+                                    <h3 class="menu__item-name">Almond Biscotti</h3>
+                                    <img src="./Images/pasteryIMG4.jpg" class="cardImg"alt="Almond Biscotti Image"/>
+                                    <span class="menu__item-price">$2.95</span>
+                                </div>
+                                <p class="menu__item-description">
+                                    Traditional Italian twice-baked cookie with almonds
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Specials Menu -->
+                    <div class="menu__category" id="specials">
+                        <div class="menu__grid">
+                            <div class="menu__item">
+                                <div class="menu__item-header">
+                                    <h3 class="menu__item-name">Single Origin Guatemala</h3>
+                                    <img src="./Images/BeansIMG1.jpg" class="cardImg" alt="Single Origin Guatemala Coffee Image"/>
+                                    <span class="menu__item-price">$6.50</span>
+                                </div>
+                                <p class="menu__item-description">
+                                    Limited edition pour-over from Huehuetenango region
+                                </p>
+                            </div>
+                            
+                            <div class="menu__item">
+                                <div class="menu__item-header">
+                                    <h3 class="menu__item-name">Nitro Coffee</h3>
+                                    <img src="./Images/BeansIMG2.jpg" class="cardImg" alt="Nitro Coffee Image"/>
+                                    <span class="menu__item-price">$4.95</span>
+                                </div>
+                                <p class="menu__item-description">
+                                    Cold brew infused with nitrogen for a creamy texture
+                                </p>
+                            </div>
+                            
+                            <div class="menu__item">
+                                <div class="menu__item-header">
+                                    <h3 class="menu__item-name">Seasonal Latte</h3>
+                                    <img src="./Images/BeansIMG3.jpg" class="cardImg" alt="Seasonal Latte Image"/>
+                                    <span class="menu__item-price">$5.95</span>
+                                </div>
+                                <p class="menu__item-description">
+                                    Features rotating seasonal flavors and local ingredients
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about section" id="about">
+            <div class="container">
+                <div class="about__container">
+                    <div class="about__content">
+                        <div class="section__header">
+                            <h2 class="section__title">Our Story</h2>
+                            <p class="section__subtitle">Passion for coffee, commitment to excellence</p>
+                        </div>
+                        
+                        <div class="about__text">
+                            <p>
+                                Founded in 2018, Roasted Bliss began as a dream to bring exceptional coffee 
+                                experiences to our community. Our journey started with a simple belief: 
+                                great coffee has the power to bring people together and brighten their day.
+                            </p>
+                            <p>
+                                We source our beans directly from sustainable farms, building relationships 
+                                with growers who share our commitment to quality and environmental responsibility. 
+                                Every cup tells a story of craftsmanship, from farm to your table.
+                            </p>
+                            <p>
+                                Our expert baristas undergo extensive training to ensure each drink meets 
+                                our high standards. We believe in the art of coffee-making and the joy 
+                                of creating memorable moments for our customers.
+                            </p>
+                        </div>
+                        
+                        <div class="about__values">
+                            <div class="value">
+                                <h4 class="value__title">Quality First</h4>
+                                <p class="value__description">Premium beans, expert roasting, perfect extraction</p>
+                            </div>
+                            <div class="value">
+                                <h4 class="value__title">Sustainability</h4>
+                                <p class="value__description">Ethical sourcing, eco-friendly practices</p>
+                            </div>
+                            <div class="value">
+                                <h4 class="value__title">Community</h4>
+                                <p class="value__description">Building connections, one cup at a time</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about__image">
+                        <img src="https://images.pexels.com/photos/13704064/pexels-photo-13704064.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Coffee roasting process" class="about__img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact section" id="contact">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Get In Touch</h2>
+                    <p class="section__subtitle">We'd love to hear from you</p>
+                </div>
+                
+                <div class="contact__container">
+                    <div class="contact__info">
+                        <div class="contact__card">
+                            <h3 class="contact__card-title">Visit Us</h3>
+                            <div class="contact__detail">
+                                <strong>Address:</strong>
+                                <p>123 Coffee Street<br>Downtown District<br>Coffee City, CC 12345</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact__card">
+                            <h3 class="contact__card-title">Hours</h3>
+                            <div class="contact__detail">
+                                <strong>Monday - Friday:</strong>
+                                <p>6:00 AM - 8:00 PM</p>
+                                <strong>Saturday - Sunday:</strong>
+                                <p>7:00 AM - 9:00 PM</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact__card">
+                            <h3 class="contact__card-title">Contact</h3>
+                            <div class="contact__detail">
+                                <strong>Phone:</strong>
+                                <p>(555) 123-4567</p>
+                                <strong>Email:</strong>
+                                <p>hello@roastedbliss.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <form class="contact__form" id="contact-form">
+                        <div class="form__group">
+                            <input type="text" id="name" name="name" class="form__input" placeholder="Your Name" required>
+                            <span class="form__error" id="name-error"></span>
+                        </div>
+                        
+                        <div class="form__group">
+                            <input type="email" id="email" name="email" class="form__input" placeholder="Your Email" required>
+                            <span class="form__error" id="email-error"></span>
+                        </div>
+                        
+                        <div class="form__group">
+                            <input type="text" id="subject" name="subject" class="form__input" placeholder="Subject" required>
+                            <span class="form__error" id="subject-error"></span>
+                        </div>
+                        
+                        <div class="form__group">
+                            <textarea id="message" name="message" class="form__textarea" placeholder="Your Message" rows="6" required></textarea>
+                            <span class="form__error" id="message-error"></span>
+                        </div>
+                        
+                        <button type="submit" class="btn btn--primary btn--full">Send Message</button>
+                        
+                        <div class="form__success" id="form-success">
+                            Thank you! Your message has been sent successfully.
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__container">
+                <div class="footer__content">
+                    <div class="footer__section">
+                        <h3 class="footer__title">Roasted Bliss</h3>
+                        <p class="footer__description">
+                            Crafting exceptional coffee experiences since 2018. 
+                            Join us for the perfect cup and create lasting memories.
+                        </p>
+                        <div class="footer__social">
+                            <a href="#" class="social__link" aria-label="Facebook">
+                                <span class="social__icon">f</span>
+                            </a>
+                            <a href="#" class="social__link" aria-label="Instagram">
+                                <span class="social__icon">ig</span>
+                            </a>
+                            <a href="#" class="social__link" aria-label="Twitter">
+                                <span class="social__icon">t</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="footer__section">
+                        <h4 class="footer__subtitle">Quick Links</h4>
+                        <ul class="footer__list">
+                            <li><a href="#home" class="footer__link">Home</a></li>
+                            <li><a href="#menu" class="footer__link">Menu</a></li>
+                            <li><a href="#about" class="footer__link">About</a></li>
+                            <li><a href="#contact" class="footer__link">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer__section">
+                        <h4 class="footer__subtitle">Newsletter</h4>
+                        <p class="footer__newsletter-text">
+                            Subscribe to get updates on new blends and special offers.
+                        </p>
+                        <form class="newsletter__form">
+                            <input type="email" placeholder="Your email" class="newsletter__input">
+                            <button type="submit" class="newsletter__btn">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="footer__bottom">
+                    <p class="footer__copy">
+                        &copy; 2024 Roasted Bliss. All rights reserved. | 
+                        <a href="#" class="footer__link">Privacy Policy</a> | 
+                        <a href="#" class="footer__link">Terms of Service</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
